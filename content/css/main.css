@@ -48,6 +48,9 @@
     display: block;
     margin: 10px;
     cursor: pointer;
+}
+
+.test_header_menu-popover > li {
     width: 100%;
 }
 
@@ -78,6 +81,7 @@
     height: 275px;
     padding: 200px 75px;
     background-color: rgb(14, 165, 187);
+    color: white;
 }
 
 .test_ad-block_header {
@@ -90,11 +94,16 @@
     justify-content: space-between;
 }
 
+.test_ad-block_link {
+    opacity: 0.5;
+}
+
 .test_ad-secondary {
     justify-content: space-between;
     align-items: center;
     font-size: 26px;
     height: 235px;
+    color: white;
 }
 
 .test_ad-secondary_link {
@@ -105,11 +114,13 @@
 
 .test_ad-secondary_text {
     margin: 100px 80px;
+    opacity: 0.2;
 }
 
 .test_ad-secondary_link {
     flex-basis: 230px;
     text-align: center;
+
 }
 
 .test_pics_box {
@@ -130,10 +141,13 @@
 
 .test_content-box {
     padding: 50px 90px;
+    background-color: rgb(235,235,235);
+
 }
 .test_content-text {
     columns: 365px 2;
     column-gap: 40px;
+    color: rgb(81,81,81);
 }
 
 .invisible-element,
@@ -152,4 +166,13 @@
 
 .bars-button:focus {
     outline: none;
+}
+
+.test_content-box > h3 {
+    color: rgb(8, 140, 165);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }

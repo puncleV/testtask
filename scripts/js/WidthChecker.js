@@ -12,7 +12,9 @@ class WidthChecker {
     changeContentTextStyle() {
         let contentText = document.getElementById("idContentText");
 
-        contentText.style.columns = "1"
+        contentText.style.columns = "1";
+        contentText.style['-webkit-columns'] = 1;
+        contentText.style['-moz-columns'] = 1;
     }
     changeMenuItemsType() {
         let menuBars = document.getElementById("idMenuBars"),

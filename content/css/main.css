@@ -3,8 +3,10 @@
 }
 
 .test_body {
+    display: -webkit-flex;
     display: flex;
     flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
     flex-basis: 1024px;
     margin: 0;
 }
@@ -13,22 +15,27 @@
     background-color: rgb(55, 60, 63);
     height: 100px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
     position: relative;
     color: white;
 }
 
 .test_header_menu {
     flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
 }
 
 .test_header_menu,
 .test_header_menu-popover {
     display: flex;
+    display: -webkit-flex;
     text-transform: uppercase;
     padding: 0 25px;
     margin: 0;
     align-items: center;
+    -webkit-align-items: center;
 }
 
 .test_header_menu:focus,
@@ -38,6 +45,7 @@
 
 .test_header_menu-popover {
     flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
     position: absolute;
     top: 100%;
     background-color: rgb(55, 60, 63);
@@ -69,11 +77,15 @@
 .test_pics_box,
 .test_ad-block_link-box {
     display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row-reverse wrap;
     flex-flow: row wrap;
 }
 
 .test_ad-secondary {
     display: flex;
+    display: -webkit-flex;
+    -webkit-flex-flow: row-reverse nowrap;
     flex-flow: row nowrap;
 }
 
@@ -101,6 +113,7 @@
 .test_ad-secondary {
     justify-content: space-between;
     align-items: center;
+    -webkit-align-items: center;
     font-size: 26px;
     height: 235px;
     color: white;
@@ -125,6 +138,7 @@
 
 .test_pics_box {
     align-items: center;
+    -webkit-align-items: center;
     text-align: center;
     background-color: rgb(91,15,161);
 }
@@ -146,7 +160,11 @@
 }
 .test_content-text {
     columns: 365px 2;
+    -moz-columns: 365px 2;
+    -webkit-columns: 365px 2;
     column-gap: 40px;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
     color: rgb(81,81,81);
 }
 

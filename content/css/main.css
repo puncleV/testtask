@@ -1,0 +1,21 @@
+.test_body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.test_header {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.test_ad-secondary,
+.test_pics_box,
+.test_ad-block_link-box {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.test_content-text {
+    columns: 365px 2;
+    column-gap: 40px;
+}

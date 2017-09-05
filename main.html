@@ -5,14 +5,30 @@
     <title>Main page</title>
     <link rel="stylesheet" type="text/css" href="content/css/main.css">
     <link rel="stylesheet" type="text/css" href="content/css/font-awesome.min.css">
+    <script src="scripts/js/WidthChecker.js" type="application/javascript"></script>
+    <script src="scripts/js/Menu.js" type="application/javascript"></script>
+    <script src="scripts/js/main.js" type="application/javascript"></script>
 </head>
 <body class="test_body">
-    <div class="test_header">
-        <div>psd websites</div>
-        <div>ui kits</div>
-        <div>premium psd files</div>
-        <div>about</div>
-        <div>blog</div>
+    <div id="idHeader" class="test_header">
+        <span id="idMenuBars" tabindex="1" onclick="menu.menuBarsClickHandler()" onblur="menu.blurHandler()" class="fa fa-bars bars-button invisible-element"></span>
+        <ul id="idHeaderMenu" tabindex="1" onclick="menu.close()" onblur="menu.blurHandler()" class="test_header_menu">
+            <li>
+                <a>psd websites</a>
+            </li>
+            <li>
+                <a>ui kits</a>
+            </li>
+            <li>
+                <a>premium psd files</a>
+            </li>
+            <li>
+                <a>about</a>
+            </li>
+            <li>
+                <a>blog</a>
+            </li>
+        </ul>
     </div>
     <div class="test_ad-block">
         <h1 class="test_ad-block_header">Awesome Free PSD templates & Resources</h1>
@@ -24,17 +40,17 @@
     <div class="test_ad-secondary">
         <div class="test_ad-secondary_text">I'm like Robin Hood of psd files</div>
         <div class="test_ad-secondary_link">
-            <span class="fa fa-chevron-right"></span>
+            <a><span class="fa fa-chevron-right"></span></a>
         </div>
     </div>
     <div class="test_pics_box">
-        <div><i class="fa fa-chevron-right"></i></div>
+        <div><a><i class="fa fa-chevron-right"></i></a></div>
         <img src="non-functional%20images/1.jpg">
         <img src="non-functional%20images/2.png">
     </div>
     <div class="test_content-box">
         <h3>www.BlazRobar.com</h3>
-        <p class="test_content-text">
+        <p id="idContentText" class="test_content-text">
             Широкая электрификация южных губерний даст мощный толчок подъёму сельского хозяйства.
             Широкая электрификация южных губерний даст мощный толчок подъёму сельского хозяйства.
             Широкая электрификация южных губерний даст мощный толчок подъёму сельского хозяйства.

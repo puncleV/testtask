@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    color: white;
 }
 
 .test_header_menu {
@@ -54,9 +55,12 @@
     border-bottom: 1px solid darkgrey;
 }
 
-.test_header,
-.test_ad-secondary {
+.test_header {
     background-color: rgb(55, 60, 63);
+}
+
+.test_ad-secondary {
+    background-color: rgb(39, 33, 44);
 }
 
 .test_pics_box,

@@ -1,7 +1,6 @@
 class WidthChecker {
     constructor() {
         this.clientWidth = document.documentElement.clientWidth;
-        this.clientWidth = 640
         if( this.isSmallDevice() ) {
             this.changeContentTextStyle();
             this.changeMenuItemsType();
